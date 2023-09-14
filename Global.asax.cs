@@ -31,8 +31,8 @@ namespace News
 
             //Autofac
             var builder = new ContainerBuilder();
-
             builder.RegisterControllers(Assembly.GetExecutingAssembly());
+            
             builder.RegisterType<EditorRepository>().As<EditorRepository>();
             builder.RegisterType<NewsRepository>().As<NewsRepository>();
             builder.RegisterType<ImageRepository>().As<ImageRepository>();
